@@ -1,0 +1,126 @@
+/*Write Your Styles Under This Line*/
+body {
+	background: #000;
+}
+
+.container {
+	width: 960px;
+	margin: auto;
+	background: #bd2309;
+	min-height: 1000px;
+	padding: 20px;
+}
+
+.headerleft {
+	height: 59px;
+	width: 165px;
+	background-color: #52e252;
+	float: left;
+}
+
+.headerright {
+	height: 59px;
+	width: 165px;
+	background-color: #52e252;
+	float: right;
+}
+
+.clear {
+	clear: both;
+}
+
+.navigation {
+	height: 59px;
+	background-color: #52e252;
+	margin-top: 20px;
+}
+
+.banner {
+	height: 300px;
+	background-color: #52e252;
+	margin-top: 20px;
+}
+
+.welcomeleft {
+	height: 150px;
+	width: 722px;
+	background-color: #52e252;
+	float: left;
+	margin-top: 25px;
+}
+
+.clear {
+	clear: both;
+}
+
+.welcomeright {
+	height: 150px;
+	width: 218px;
+	background-color: #52e252;
+	float: right;
+	margin-top: 25px;
+}
+
+.clear {
+	clear: both;
+}
+
+.gallery1 {
+	height: 150px;
+	width: 235px;
+	background-color: #52e252;
+	margin-top: 25px;
+	clear: both;
+	float: left
+}
+
+.gallery2 {
+	height: 150px;
+	width: 235px;
+	background-color: #52e252;
+	margin-top: 25px;
+	float: right;
+	margin-right: 5px;
+}
+
+.gallery3 {
+	height: 150px;
+	width: 235px;
+	background-color: #52e252;
+	margin-top: 25px;
+	float: right;
+	margin-right: 5px;
+}
+
+.gallery4 {
+	height: 150px;
+	width: 235px;
+	background-color: #52e252;
+	margin-top: 25px;
+	float: right;
+	margin-right: 5px;
+}
+
+clear {
+	clear: both;
+}
+
+.bottom1 {
+	height: 150px;
+	width: 480px;
+	background-color: #52e252;
+	margin-left: 5px;
+	float: right;
+}
+
+clear {
+	clear: both;
+}
+
+.bottom2 {
+	height: 150px;
+	width: 480px;
+	background-color: #52e252;
+	margin-top: 25px;
+	margin-left: -3px;
+}

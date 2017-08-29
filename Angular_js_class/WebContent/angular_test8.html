@@ -1,0 +1,41 @@
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js">
+	</script>
+	<script type="text/javascript">
+		var myApp = angular.module("myApp", []);
+
+		myApp.controller('employee', function($scope, $filter, employeeFactory) {
+			$scope.isChecked = true;
+			$scope.employeeList = employeeFactory.contacts;
+		});
+	
+	</script>
+	<script type="text/javascript" src="js/8.js"></script>
+
+</head>
+<body ng-app="myApp">
+	<div ng-controller="employee">
+		<input type="text" ng-model="q">
+		<br/>
+		<div pappu-directive></div>
+		
+		<ilango-directive></ilango-directive>
+		<table ng-if="isChecked">
+			<thead>
+				<td>Employee Name</td>
+				<td>Employee Id</td>
+				<td>Employee Salary</td>
+			</thead>
+			<tbody>
+				<tr ng-repeat="emp in employeeList | filter:q">
+					<td>{{emp.empName | ilangoFilter:' thambi'}}</td>
+					<td>{{emp.empID}}</td>
+					<td>{{emp.Salary}}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+</body>
+<html>

@@ -1,0 +1,31 @@
+body{
+	background-color: tomato;
+}
+
+/*Mobile*/
+@media(max-width: 767px){
+	body{
+	 background-color: red;
+	}
+}
+
+/*Tablet*/
+@media(min-width: 768px){
+		body{
+	 background-color: seagreen;
+	}
+}
+
+/*small screen*/
+@media(min-width: 992px){
+		body{
+	 background-color: cornflowerblue;
+	}
+}
+
+/*Desktop*/
+@media(min-width: 1200px){
+		body{
+	 background-color: tomato;
+	}
+}

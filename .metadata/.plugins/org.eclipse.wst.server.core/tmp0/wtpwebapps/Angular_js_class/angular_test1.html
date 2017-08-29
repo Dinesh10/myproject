@@ -1,0 +1,38 @@
+<html >
+<head >
+	
+	
+	
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+	
+	<script type="text/javascript">
+		var myApp = angular.module("myApp", []);
+		
+	
+		
+		myApp.controller('Employee', function($employeescope) {
+			employeescope.name = "ilango";
+			employeescope.age = 40;
+		});
+		myApp.controller('Employer', function($employerscope) {
+			employerscope.name = "ITAG";
+			employerscope.location = "Coimbatore";
+		});
+
+	</script>
+
+</head>
+<body  ng-app="myApp">
+	<div ng-controller="Employee">
+		I am {{name}} and my age is {{age}}
+		</div>
+		<div ng-controller="Employer">
+			My Employer name is {{name}} and they are located at {{location}}
+		
+	</div>
+
+</body>
+
+
+<html>

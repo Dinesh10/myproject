@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Isolated Scope</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js" ></script>
+    <script type="text/javascript">
+    var app =angular.module("myApp",[]);
+    app.controller('first',function($scope){
+      $scope.a = 10;
+      $scope.b = 20;
+      $scope.c = 30;
+    });
+    
+    $scope.$watch('a' function(newVale,oldVale){
+    	$scope.b = newVale*2;
+    });
+
+  app.directive('first' ,function(){
+      return {
+        restrict :'E',
+        templateUrl : 'ref.html',
+        scope :{
+          a : '=',
+          b : '@x',
+          c : '@'
+
+      }
+      }
+    });
+    </script>
+  </head>
+</head>
+<body ng-app="myApp">
+  <div ng-controller="first">
+      The Value of A is
+      <input type="text" ng-model='a'>
+       <br/>
+      The Value of B is {{b}} <br/>
+      The Value of C is {{c}} <br/>
+
+    ********************************* <br/>
+
+
+  <first a = "a"   x = {{a}} c = "80" ></first>
+  </div>
+</body>
+</html>

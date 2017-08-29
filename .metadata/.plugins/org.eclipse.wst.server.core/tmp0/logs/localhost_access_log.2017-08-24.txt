@@ -1,0 +1,2 @@
+127.0.0.1 - - [24/Aug/2017:17:06:25 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [24/Aug/2017:17:06:25 +0530] "GET /Angular_Js_tutorial_raja/Data_binding.html HTTP/1.1" 200 271

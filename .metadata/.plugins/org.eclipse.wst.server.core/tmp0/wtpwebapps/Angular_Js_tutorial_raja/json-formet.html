@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>title info</title>
+<!--CHEANG-2 -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+
+<!-- Websites CSS style -->
+<link rel="stylesheet" type="text/css" href="css/costem/json-form.css">
+
+
+
+<!-- Website Font style -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+<!-- CHEANG-1 -->
+<link rel="stylesheet" type="text/css"
+	href="font-awesome/css/font-awesome.min.css">
+
+
+
+<!-- Google Fonts -->
+<link href='https://fonts.googleapis.com/css?family=Passion+One'
+	rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Oxygen'
+	rel='stylesheet' type='text/css'>
+
+
+<!-- CHEANG-3 -->
+<script type="text/javascript" src="js/jquery.js"></script>
+<!-- CHEANG-4  -->
+
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js" ></script>
+<script type="text/javascript" src="js/costem/module.js"></script>
+<script type="text/javascript" src="js/costem/json-controller.js"></script>
+
+
+</head>
+<body ng-app="firstModule">
+	<div class="container" ng-controller="JsonController">
+			<div class="row main" >
+				<div class="panel-heading">
+	               <div class="panel-title text-center">
+	               		<h1 class="title">ITAG</h1>
+	               		<hr />
+	               	</div>
+	            </div> 
+				<div class="main-login main-center" >
+					<form class="form-horizontal" method="post" action="#" >
+						
+						<div class="form-group">
+							<label for="name" class="cols-sm-2 control-label">Your Name</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+									<input type="text" class="form-control"   placeholder="Enter your Name" ng-model="user.your_name">
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="email" class="cols-sm-2 control-label">Your Email</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+									<input type="email" class="form-control" name="email" id="email"  placeholder="Enter your Email" ng-model="user.your_email">
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="username" class="cols-sm-2 control-label">Username</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="username" id="username"  placeholder="Enter your Username" ng-model="user.user_name"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="password" class="cols-sm-2 control-label">Password</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+									<input type="password" class="form-control" name="password" id="password"  placeholder="Enter your Password" ng-model="user.password"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="confirm" class="cols-sm-2 control-label">Confirm Password</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+									<input type="password" class="form-control" name="confirm" id="confirm"  placeholder="Confirm your Password" ng-model="user.confirm_password"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group ">
+							<input type="submit" class="btn btn-primary btn-lg btn-block login-button" ng-click="onSubmit()">
+						</div>
+						<div class="login-register">
+				            <a href="index.php">Login</a>
+				         </div>
+					</form>
+				</div>
+			</div>
+		<div class="row">
+		<div class="clos-sm-12">
+		<h4>Debug</h4>
+		<pre>{{user | json}}</pre>
+		</div>
+		</div>
+		</div>
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script> -->
+
+
+	</body>
+</html>
+	

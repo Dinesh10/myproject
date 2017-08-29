@@ -1,0 +1,1 @@
+$('#myLightbox').lightbox(options)

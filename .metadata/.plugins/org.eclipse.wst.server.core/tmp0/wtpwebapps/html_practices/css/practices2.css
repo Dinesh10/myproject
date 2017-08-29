@@ -1,0 +1,31 @@
+body
+{
+height:1000px;
+}
+div
+{
+padding:40px;
+border:solid 1px yellow;
+position:relative;
+margin-bottom:20px;
+}
+h1
+{
+margin:0px;
+}
+p
+{
+position:fixed;
+margin:0px;
+position:absolute;
+top:0;
+right:0;
+}
+.one , .two, .three, .four
+{
+position:relative;
+}
+
+
+
+

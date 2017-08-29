@@ -1,0 +1,17 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+    <body>
+    <?php
+echo "<h1 align='center'>Swapping Sample Program</h1>";
+$A=100;
+$b=200;
+echo "Before Swapping :- </br>";
+echo "A : $A </br";
+echo "B : $B ";
+	?>
+    </body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>title info</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<!-- Websites CSS style -->
+<link rel="stylesheet" type="text/css" href="css/costem/validation_form.css">
+<!-- Website Font style -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+<!-- CHEANG-1 -->
+<link rel="stylesheet" type="text/css"
+	href="font-awesome/css/font-awesome.min.css">
+<!-- Google Fonts -->
+<link href='https://fonts.googleapis.com/css?family=Passion+One'
+	rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Oxygen'
+	rel='stylesheet' type='text/css'>
+<!-- CHEANG-3 -->
+<script type="text/javascript" src="js/jquery.js"></script>
+<!-- CHEANG-4  -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js" ></script>
+<script type="text/javascript" src="js/costem/module.js"></script>
+<script type="text/javascript" src="js/costem/angular_validation_form.js"></script>
+
+</head>
+<body ng-app="firstModule">
+	<div class="container" ng-controller="ValidationController">
+		<form class="well form-horizontal" action=" " method="post"
+			id="contact_form">
+			<fieldset>
+				<!-- Form Name -->
+				<legend>Contact Us Today!</legend>
+
+				<!-- Text input-->
+				<div class="form-group">
+					<label class="col-md-4 control-label">First Name</label>
+					<div class="col-md-4 inputGroupContainer">
+						<div class="input-group">
+							<span class="input-group-addon"><i
+								class="glyphicon glyphicon-user"></i></span> <input name="first_name"
+								placeholder="First Name" class="form-control" type="text" ng-model="user.first_name">
+						</div>
+					</div>
+				</div>
+
+				<!-- Text input-->
+				<div class="form-group">
+					<label class="col-md-4 control-label">Last Name</label>
+					<div class="col-md-4 inputGroupContainer">
+						<div class="input-group">
+							<span class="input-group-addon"><i
+								class="glyphicon glyphicon-user"></i></span> <input name="last_name"
+								placeholder="Last Name" class="form-control" type="text" ng-model="user.last_name">
+						</div>
+					</div>
+				</div>
+
+				<!-- Text input-->
+				<div class="form-group">
+					<label class="col-md-4 control-label">E-Mail</label>
+					<div class="col-md-4 inputGroupContainer">
+						<div class="input-group">
+							<span class="input-group-addon"><i
+								class="glyphicon glyphicon-envelope"></i></span> <input name="email"
+								placeholder="E-Mail Address" class="form-control" type="text" ng-model="user.user_ename">
+						</div>
+					</div>
+				</div>
+
+				<!-- Text input-->
+				<div class="form-group">
+					<label class="col-md-4 control-label">Phone #</label>
+					<div class="col-md-4 inputGroupContainer">
+						<div class="input-group">
+							<span class="input-group-addon"><i
+								class="glyphicon glyphicon-earphone"></i></span> <input name="phone"
+								placeholder="(845)555-1212" class="form-control" type="text" ng-model="user.phone">
+						</div>
+					</div>
+				</div>
+
+				<!-- Text input-->
+				<div class="form-group">
+					<label class="col-md-4 control-label">Address</label>
+					<div class="col-md-4 inputGroupContainer">
+						<div class="input-group">
+							<span class="input-group-addon"><i
+								class="glyphicon glyphicon-home"></i></span> <input name="address"
+								placeholder="Address" class="form-control" type="text" ng-model="user.address">
+						</div>
+					</div>
+				</div>
+
+				<!-- Text input-->
+				<div class="form-group">
+					<label class="col-md-4 control-label">City</label>
+					<div class="col-md-4 inputGroupContainer">
+						<div class="input-group">
+							<span class="input-group-addon"><i
+								class="glyphicon glyphicon-home"></i></span> <input name="city"
+								placeholder="city" class="form-control" type="text" ng-model="user.city">
+						</div>
+					</div>
+				</div>
+
+				<!-- Select Basic -->
+				<div class="form-group">
+					<label class="col-md-4 control-label">Country</label>
+					<div class="col-md-4 selectContainer">
+						<div class="input-group">
+							<span class="input-group-addon"><i
+								class="glyphicon glyphicon-list"></i></span>
+								<select class="form-control selectpicker" ng-init="user.country = countries[2].country_id" 
+								ng-options="country.country_id as country.country_name for country in countries" 
+								ng-model="user.country">
+<!-- 								<option value="1">Please select your state</option> -->
+								<!-- 								<option>Alabama</option> -->
+								<!-- 								<option>Alaska</option> -->
+								<!-- 								<option>Arizona</option> -->
+								<!-- 								<option>Arkansas</option> -->
+								<!-- 								<option>California</option> -->
+								<!-- 								<option>Colorado</option> -->
+								<!-- 								<option>Connecticut</option> -->
+								<!-- 								<option>Delaware</option> -->
+								<!-- 								<option>District of Columbia</option> -->
+								<!-- 								<option>Florida</option> -->
+								<!-- 								<option>Georgia</option> -->
+								<!-- 								<option>Hawaii</option> -->
+								<!-- 								<option>daho</option> -->
+								<!-- 								<option>Illinois</option> -->
+								<!-- 								<option>Indiana</option> -->
+								<!-- 								<option>Iowa</option> -->
+								<!-- 								<option>Kansas</option> -->
+								<!-- 								<option>Kentucky</option> -->
+								<!-- 								<option>Louisiana</option> -->
+								<!-- 								<option>Maine</option> -->
+								<!-- 								<option>Maryland</option> -->
+								<!-- 								<option>Mass</option> -->
+								<!-- 								<option>Michigan</option> -->
+								<!-- 								<option>Minnesota</option> -->
+								<!-- 								<option>Mississippi</option> -->
+								<!-- 								<option>Missouri</option> -->
+								<!-- 								<option>Montana</option> -->
+								<!-- 								<option>Nebraska</option> -->
+								<!-- 								<option>Nevada</option> -->
+								<!-- 								<option>New Hampshire</option> -->
+								<!-- 								<option>New Jersey</option> -->
+								<!-- 								<option>New Mexico</option> -->
+								<!-- 								<option>New York</option> -->
+								<!-- 								<option>North Carolina</option> -->
+								<!-- 								<option>North Dakota</option> -->
+								<!-- 								<option>Ohio</option> -->
+								<!-- 								<option>Oklahoma</option> -->
+								<!-- 								<option>Oregon</option> -->
+								<!-- 								<option>Pennsylvania</option> -->
+								<!-- 								<option>Rhode Island</option> -->
+								<!-- 								<option>South Carolina</option> -->
+								<!-- 								<option>South Dakota</option> -->
+								<!-- 								<option>Tennessee</option> -->
+								<!-- 								<option>Texas</option> -->
+								<!-- 								<option>Uttah</option> -->
+								<!-- 								<option>Vermont</option> -->
+								<!-- 								<option>Virginia</option> -->
+								<!-- 								<option>Washington</option> -->
+								<!-- 								<option>West Virginia</option> -->
+								<!-- 								<option>Wisconsin</option> -->
+								<!-- 								<option>Wyoming</option> -->
+							</select>
+						</div>
+					</div>
+				</div>
+
+				<!-- Text input-->
+				<div class="form-group">
+					<label class="col-md-4 control-label">Zip Code</label>
+					<div class="col-md-4 inputGroupContainer">
+						<div class="input-group">
+							<span class="input-group-addon"><i
+								class="glyphicon glyphicon-home"></i></span> <input name="zip"
+								placeholder="Zip Code" class="form-control" type="text" ng-model="user.zip_code">
+						</div>
+					</div>
+				</div>
+
+				<!-- Text input-->
+				<div class="form-group">
+					<label class="col-md-4 control-label">Website or domain
+						name</label>
+					<div class="col-md-4 inputGroupContainer">
+						<div class="input-group">
+							<span class="input-group-addon"><i
+								class="glyphicon glyphicon-globe"></i></span> <input name="website"
+								placeholder="Website or domain name" class="form-control"
+								type="text" ng-model="user.website_or_domain">
+						</div>
+					</div>
+				</div>
+
+				<!-- radio checks -->
+				<div class="form-group">
+					<label class="col-md-4 control-label">Do you have hosting?</label>
+					<div class="col-md-4">
+						<div class="radio">
+							<label> <input type="radio" name="hosting" value="yes" ng-model="user.do_you_have_hostiong" />
+								Yes
+							</label>
+						</div>
+						<div class="radio">
+							<label> <input type="radio" name="hosting" value="no" />
+								No
+							</label>
+						</div>
+					</div>
+				</div>
+
+				<!-- Text area -->
+				<div class="form-group">
+					<label class="col-md-4 control-label">Project Description</label>
+					<div class="col-md-4 inputGroupContainer">
+						<div class="input-group">
+							<span class="input-group-addon"><i
+								class="glyphicon glyphicon-pencil"></i></span>
+							<textarea class="form-control" name="comment"
+								placeholder="Project Description" ng-model="user.project_description"></textarea>
+						</div>
+					</div>
+				</div>
+
+				<!-- Success message -->
+				<div class="alert alert-success" role="alert" id="success_message">
+					Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for
+					contacting us, we will get back to you shortly.
+				</div>
+
+				<!-- Button -->
+				<div class="form-group">
+					<label class="col-md-4 control-label"></label>
+					<div class="col-md-4">
+						<button type="submit" class="btn btn-warning">
+							Send <span class="glyphicon glyphicon-send"></span>
+						</button>
+					</div>
+				</div>
+
+			</fieldset>
+		</form>
+	<div class="row-well">
+<div class="col-sm-12">
+<h3>Debug</h3>
+<pre>{{user.country | json}}</pre>
+
+</div>	
+</div>
+	</div>
+
+	<!-- /.container -->
+</body>
+</html>

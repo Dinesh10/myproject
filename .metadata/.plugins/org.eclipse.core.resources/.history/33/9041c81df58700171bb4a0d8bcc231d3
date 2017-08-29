@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<!-- <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> -->
+<title>Insert title here</title>
+</head>
+    <body>
+    <?php
+    echo "<h1 align='center'>Comparision and if statement</h1>";
+$a=3;
+$b=33;
+
+if ($a>$b)
+{
+	echo "$a is greater then $b";
+}
+
+else 
+{
+	echo "$b is greater then $a";
+}
+
+$ma=35;
+$sc=99;
+$en=105;
+$tm=99;
+
+
+if ($ma>=35&&$ma<=100)
+{
+	echo "</br>Maths Pass";
+	
+	if($sc>=35 && $sc<=100)
+	{
+		echo "</br>Science Pass";
+	}
+	if($en>=35 && $en<=100)
+	{
+		echo "</br>English Pass";
+	}
+else 
+{
+	echo "</br>Invalid";
+	}
+	if ($tm>=35&&$tm<=100)
+	{
+		echo "</br>Tamil Pass";
+	}
+}
+	?>
+    </body>
+</html>

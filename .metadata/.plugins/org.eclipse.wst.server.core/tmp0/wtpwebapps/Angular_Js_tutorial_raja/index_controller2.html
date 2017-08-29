@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="cart_page.css">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script type="text/javascript" src="js/costem/module.js"></script>
+<script type="text/javascript" src="js/costem/controller2.js"></script>
+</head>
+<body ng-app="firstModule">
+	<div class="container" id="tourpackages-carousel"
+		ng-controller="ProjectController">
+
+		<div class="row">
+			<ul class="thumbnails list-unstyled">
+				<li class="col-xs-18 col-sm-6 col-md-3"
+					ng-repeat="product in products">
+					<div class="thumbnail">
+						<img alt="cart_image" style="width:100%"  src="{{product.product_image}}" >
+						<div class="caption">
+							<h3>{{product.product_name}}</h3>
+							<p>{{product.product_description}}</p>
+							<h4>Rs.{{product.product_price}}</h4>
+							<div class="btn btn-info btn-md"  ng-click="addToCart($index)" ng-disabled="product.disable">Add to Cart
+							</div>
+						</div>
+					</div>
+				</li>
+			<li class=" col-md-3">
+			<div class="thumbnail">
+			<div style="padding: 4px">
+			</div>
+			<div class="caption">
+			<h3>CART</h3>
+			<ol>
+			<li ng-repeat="item in cart">{{item.product_name}} - {{item.product_price }}<button class="btn btnlink" ng-click="removeItem($index)">X
+			</button>
+			</li>
+			</ol>
+            <h3>TOTAL {{getTotal()}}</h3>
+			</div>
+			</div>
+			</li>	
+			</ul>
+		</div>
+	</div>
+
+	<!-- 	<div class="container" ng-controller="ProjectController"> -->
+	<!-- <div class="row"> -->
+	<!-- 		 <ul class = "thumbnails list-unstyled" > -->
+	<!-- 		 <li class = "col-md-3" ng-repeat="product in products "> -->
+	<!-- 		 <div class = "thumbnail" style="padding:0"> -->
+	<!-- 		 <div style = "padding:4px"> -->
+	<!-- 		 <img  style="width:100%" src={{product.product_image}}> -->
+	<!-- 		 </div> -->
+	<!-- 		 <div class="caption"> -->
+	<!-- 		 <h2>{{product.product_name}}</h2> -->
+	<!-- 		 <p>{{product.product_description}}</p> -->
+	<!-- 		 <h3>Rs.{{product.product_price}}</h3> -->
+	<!-- 		 <button class="btn btn-info btn-sm">Add to Cart</button> -->
+	<!-- 		 </div> -->
+	<!-- 		 </div> -->
+	<!-- 		 </li> -->
+	<!-- 		 </ul> -->
+	<!-- 		</div> -->
+	<!-- 	</div> -->
+</body>
+</html>

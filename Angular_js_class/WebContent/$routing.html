@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+    src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script type="text/javascript">
+var app = angular.module('firstModule',[$ngRoute]);
+
+provider('$route', $RouteProvider);
+</script>
+</head>
+<body ng-app="firstModule">
+<div class="container">
+<div class="row">
+<div class="col-sm-3 well" style="height-100%">
+<ol>
+<li><a href="#/Angular_js_class/$routing.html">first page</a></li>
+<li><a href="#/Angular_js_class/scrond-page.html">scrond page</a></li>
+</ol>
+
+</div>
+<div class="col-sm-7 well" style="height-100%">
+<div class="ng-view"></div>
+</div>
+</div>
+</div>
+</body>
+</html>

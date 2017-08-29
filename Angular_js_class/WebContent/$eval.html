@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+<script type="text/javascript">
+var app = angular.module('firstModule',[]);
+
+app.controller('http',function($scope,$sparse){
+$scope : a = 10;
+$scope : b = 20;
+$scope : c = 30;
+
+$scope.add = $scope.$eval ('a+b');
+});
+</script> 
+</head>
+<body ng-app="firstModule">
+<div ng-controller="http" >
+<div>
+the value is {{'add'}}
+the value is {{'b'}}
+  </div>
+</div>
+</body>
+</html>

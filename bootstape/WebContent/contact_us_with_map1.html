@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+<!--   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script> -->
+<!--   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+ <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnycWatbGyK6ldFqErjFtko1yeMclNUOA&amp;sensor=true"></script>
+<script type="text/javascript" src="js/costem/contact_us_with_map1.js"></script>
+<link rel="stylesheet" type="text/css" href="css/costem/contact_us_with_map1.css">
+
+
+
+</head> 
+<body>
+<section class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Contact Me<i class="fa fa-paper-plane-o"></i></h2>
+                </div>
+            </div>
+            <div id="map-canvas"></div>
+            <div class="row">
+                <form method="post" action="contact.php" name="contactform" id="contactform">
+                    <div class="col-md-6">
+                        <fieldset>
+                            <input name="name" type="text" id="name" size="30" placeholder="Name">
+                            <br>
+                            <input name="email" type="text" id="email" size="30" placeholder="Email">
+                            <br>
+                            <input name="phone" type="text" id="phone" size="30" placeholder="Phone">
+                            <br>
+                            <input name="human" type="text" id="human" size="30" placeholder="Prove your not a robot... What is 2+2?">
+                            <br>
+                        </fieldset>
+                    </div>
+                    <div class="col-md-6">
+                        <fieldset>
+                            <textarea name="comments" cols="40" rows="20" id="comments" placeholder="Message"></textarea>
+                        </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                        <fieldset>
+                            <button type="submit" class="btn btn-lg" id="submit" value="Submit">Send Message</button>
+                        </fieldset>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+   
+    <!--Google Maps API-->
+</body>
+</html>

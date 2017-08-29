@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<!-- <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> -->
+<title>Insert title here</title>
+</head>
+    <body>
+    <?php
+echo "<h1 align='center'>Swapping Sample Program</h1>";
+$rs=$a*$b;
+$a=100;
+$b=250;
+echo "Before Swapping :- </br>";
+echo "()";
+
+	?>
+    </body>
+</html>

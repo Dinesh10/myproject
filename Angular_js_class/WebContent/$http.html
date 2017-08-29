@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script type="text/javascript" src="js/$http.js"></script>
+<script type="text/javascript">
+var app = angular.module('firstModule',[]);
+
+app.controller('http',function($scope,$http){
+
+	$http({
+	method: 'GET'
+url : 'products.json'
+	)}.then(function succesCallback(respones))
+
+};
+</script>
+</head>
+<body ng-app="firstModule">
+<div ng-controller="http" ></div>
+
+</body>
+</html>

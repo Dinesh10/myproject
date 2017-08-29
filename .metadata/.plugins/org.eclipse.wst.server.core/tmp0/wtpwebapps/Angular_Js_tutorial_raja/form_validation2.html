@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<!-- Websites CSS style -->
+<link rel="stylesheet" type="text/css"
+	href="css/costem/form_validation2.css">
+<!-- Website Font style -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+<!-- CHEANG-1 -->
+<link rel="stylesheet" type="text/css"
+	href="font-awesome/css/font-awesome.min.css">
+<!-- Google Fonts -->
+<link href='https://fonts.googleapis.com/css?family=Passion+One'
+	rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Oxygen'
+	rel='stylesheet' type='text/css'>
+<!-- CHEANG-3 -->
+<script type="text/javascript" src="js/jquery.js"></script>
+<!-- CHEANG-4  -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script type="text/javascript" src="js/costem/module.js"></script>
+<script type="text/javascript"
+	src="js/costem/angular_form_validation2.js"></script>
+
+</head>
+<body ng-app="firstModule">
+	<div class="container" ng-controller="FormController">
+		<div class="row well">
+			<div class="col-lg-6">
+				<h3 class="text-center">Client Registration form</h3>
+				<form name="profileForm">S
+					<div class="form-group">
+						<label>User Name</label> <input name="user_name"
+							placeholder="User Name" class="form-control" type="text"
+							ng-model="user.user_name" ng-maxlength="10" ng-required="true">
+						<span class="error"
+							ng-show="profileForm.user_name.$invalid &&
+							profileForm.user_name.$dirty">Please
+							Enter Characters below 10 </span>
+					</div>
+					<div class="form-group">
+						<label>Email</label> <input name="email" placeholder="Email"
+							class="form-control" type="email" ng-model="user.email"
+							ng-required="true"> <span class="error"
+							ng-show="profileForm.email.$invalid &&
+							profileForm.email.$dirty">Please
+							Enter a valid E-Mail </span>
+
+					</div>
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label>Age</label> <input name="age" placeholder="Age"
+									class="form-control" type="number" ng-model="user.age"
+									ng-min="18" ng-required="true"> <span class="error"
+									ng-show="profileForm.age.$invalid &&
+							profileForm.age.$dirty">Age
+									should be above 18 </span>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label>Mobile</label> <input name="mobile" placeholder="Mobile"
+									class="form-control" type="number" ng-model="user.mobile">
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-lable">Password</label> <input
+							name="password" placeholder="Password" class="form-control"
+							type="password" ng-model="user.password">
+					</div>
+					<div class="form-group">
+						<label>Re-Type Password</label> <input name="reTypepassword"
+							placeholder="Retypepassword" class="form-control" type="password"
+							ng-model="user.reTypepassword">
+					</div>
+					<div class="form-group">
+						<label class=" control-label"></label>
+						<button type="submit" class="btn btn-warning btn-block"
+							ng-disabled="profileForm.$invalid">
+							Submit <span class="glyphicon glyphicon-send"></span>
+						</button>
+					</div>
+				</form>
+				</br>
+			</div>
+			<div class="col-sm-6">
+				<h3>Debug</h3>
+				<pre>{{profileForm | json }}</pre>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

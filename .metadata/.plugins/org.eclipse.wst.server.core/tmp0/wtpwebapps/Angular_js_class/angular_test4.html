@@ -1,0 +1,37 @@
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js">
+	</script>
+	<script type="text/javascript">
+		var myApp = angular.module("myApp", []);
+
+		myApp.controller('employee', function($scope) {
+			$scope.isChecked = false;
+			$scope.selectedEmployee = 'none';
+			$scope.employeeList = [{empName:'ilango'},
+				{empName:'srini'},
+				{empName:'deepak'},
+				{empName:'rio'}];
+		});
+	
+	</script>
+
+</head>
+<body ng-app="myApp">
+	<div ng-controller="employee">
+		<select name="employeename "ng-model="selectedEmployee"> 
+		  		<option ng-repeat="emp in employeeList" >
+					{{emp.empName}}
+				</option>
+		</select>
+		<br/>
+		<div>
+			<p>Selected Employee is :</p>{{selectedEmployee}}
+		</div>
+	</div>
+
+
+</body>
+
+
+<html>

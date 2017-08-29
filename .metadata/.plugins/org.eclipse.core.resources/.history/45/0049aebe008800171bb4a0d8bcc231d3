@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Insert title here</title>
+</head>
+    <body>
+   <?php
+//LOOP
+//   while
+// do while
+// for 
+//for each
+
+   $g=1;
+   while ($g<=20)
+   {
+   	echo "</br>while : $g";
+   	$g++;
+   }
+
+	?>
+    </body>
+</html>

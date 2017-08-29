@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servers>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/Tomcat v8.0 Server at localhost-config" deployDir="wtpwebapps" hostname="localhost" id="Tomcat v8.0 Server at localhost" name="Tomcat v8.0 Server at localhost" runtime-id="Apache Tomcat v8.0" server-type="org.eclipse.jst.server.tomcat.80" server-type-id="org.eclipse.jst.server.tomcat.80" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="1">
+    <list key="modules" value0="Angular_Js_tutorial_raja::org.eclipse.jst.jee.server:Angular_Js_tutorial_raja::jst.web::3.0" value1="html_practices::org.eclipse.jst.jee.server:html_practices::jst.web::3.0" value2="Angular_js_class::org.eclipse.jst.jee.server:Angular_js_class::jst.web::3.0" value3="java_script::org.eclipse.jst.jee.server:java_script::jst.web::3.0" value4="angularJs_practices::org.eclipse.jst.jee.server:angularJs_practices::jst.web::3.0" value5="slider_pages-1900x1080m::org.eclipse.jst.jee.server:slider_pages-1900x1080m::jst.web::3.1"/>
+  </server>
+</servers>

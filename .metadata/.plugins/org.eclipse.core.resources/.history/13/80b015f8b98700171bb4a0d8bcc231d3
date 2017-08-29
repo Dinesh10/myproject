@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>logical operator</title>
+</head>
+
+    <body>
+    <?php
+ /*
+   && (and get)
+   || (or get)
+   !  (not get)
+  */
+    $en=60;
+    $ma=28;
+    $sc=80;
+    $so=70;
+    $ta=99;
+    
+    echo "Total : ".($en+$ma+$sc+$so+$ta);
+    echo "Average :".($en+$ma+$sc+$so+$ta)/5;
+    
+    
+    if($en>=35&&$ma>=35&&$sc>=35&&$so>=35&&$ta>=35)
+    {
+    	echo "Result : All Pass";
+    }
+    else 
+    {
+    	echo  "Result : Fail";
+    }
+	?>
+    </body>
+
+</html>

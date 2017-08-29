@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+
+    <body>
+    <p>This page uses frames. The current browser you are using does not support frames.</p>
+    <?php
+    echo "<h1 align='center'>DINESH ITAG</h1>";
+echo "hai this is php program";
+
+
+echo  "<h1 align='left'> ARRAYS</h1>";
+$pi=1.22222;
+$num=333;
+$name="ITAG";
+echo "The value of PI :" .$pi;
+echo "</br>The value of NUM :" .$num;
+echo "</br>The value of NAME :" .$name;
+printf("the value is %d" ,$num);
+
+
+	?>
+    </body>
+
+</html>

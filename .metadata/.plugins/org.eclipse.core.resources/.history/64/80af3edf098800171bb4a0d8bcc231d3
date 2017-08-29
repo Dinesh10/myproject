@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Insert title here</title>
+</head>
+    <body>
+   <?php
+//LOOP
+//   while
+// do while
+// for 
+//for each
+echo "<h1 align='center'>LOOP</h1>";
+   $g=1;
+   while ($g<=10)
+   {
+   	echo "</br>while : $g";
+   	$g++;
+   }
+
+   do 
+   {
+   	echo "Do while : $g";
+   $g=$g+2;
+   }	while ($g<=20);
+   
+   
+   
+   ?>
+    </body>
+</html>

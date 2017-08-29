@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>logical operator</title>
+</head>
+
+    <body>
+    <?php
+ /*
+  * && (and get)
+  * || (or get)
+  * !  (not get)
+  */
+    $en=60;
+    $ma=78;
+    $sc=80;
+    $so=70;
+    $ta=99;
+	?>
+    </body>
+
+</html>

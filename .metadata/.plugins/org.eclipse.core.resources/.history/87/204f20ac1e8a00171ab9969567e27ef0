@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>SWITCH PROGRAMS</title>
+</head>
+
+    <body>
+    <?php
+echo "<h1 align='center'>Basic Switch Program</h1>";
+  $ch=2;
+  switch ($ch)
+ 
+  {
+  	case 1:
+echo "One";
+break;
+  
+  	case 2:
+  		echo "Two";
+  		break;
+  		
+  	case 3:
+  		echo "Three";
+  		break;
+  		
+  	case 4:
+  		echo "Four";
+  		break;
+  		
+  	case 5:
+  		echo "Five";
+  		break;
+  		
+  		default:
+  			echo "Pleace Enter Values Between 1 to 5 ";  
+		break;
+  }
+	?>
+    </body>
+ 
+</html>
